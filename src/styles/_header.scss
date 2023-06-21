@@ -1,0 +1,22 @@
+.header {
+    display:flex;
+    justify-content: space-around;   
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 30%;
+
+    &__div{
+        width: 50%;
+        text-align: center;
+        justify-content: center;
+
+        &__item{
+            display: inline-block;
+            width: 20%;
+            height: 50%;
+            margin: 5px;
+            cursor: pointer;
+        }
+    }
+}
+

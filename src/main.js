@@ -2,6 +2,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('[data-tab-button]');
     const tabsContainer = document.querySelectorAll('[data-tab-button]');
 
+    const heroSection = document.querySelector('.hero');
+    const alturaHero = heroSection.clientHeight;
+
+    window.addEventListener('scroll', function() {
+        const posicaoAtual = this.window.scrollY;
+
+        if (posicaoAtual < alturaHero) {
+            ocultarElementosDoHeader();
+        } else {
+            exibeElementoDoHeader();
+        }
+    })
+
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao){
             const abaAlvo = botao.target.dataset.tabButton;
@@ -13,6 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 })
+
+function ocultarElementosDoHeader() {
+    const header = document.querySelector('header');
+    header.classList.add('header--is-hidden');
+}
+
+function exibeElementoDoHeader() {
+    const header = document.querySelector('header');
+    header.classList.remove('header--is-hidden');
+}
 
 function removeBotaoAtivo() {
     const buttons = document.querySelectorAll('[data-tab-button]');
