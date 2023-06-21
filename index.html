@@ -3,10 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Avengers</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>oi</h1>
+    <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__content__branding">
+                    <img src="./dist/images/logos/avengers-png-logo-4978.png" alt="AvengersLogo">
+                </h1>
+                <h3 class="title--small">
+                    Loki (Tom Hiddleston) retorna à Terra enviado pelos chitauri, uma raça alienígena que pretende dominar os humanos. Com a promessa de que será o soberano do planeta, ele rouba o cubo cósmico dentro de instalações da S.H.I.E.L.D. e, com isso, adquire grandes poderes. Loki os usa para controlar o dr. Erik Selvig (Stellan Skarsgard) e Clint Barton/Gavião Arqueiro (Jeremy Renner), que passam a trabalhar para ele. No intuito de contê-los, Nick Fury (Samuel L. Jackson) convoca um grupo de pessoas com grandes habilidades, mas que jamais haviam trabalhado juntas: Tony Stark/Homem de Ferro (Robert Downey Jr.), Steve Rogers/Capitão América (Chris Evans), Thor (Chris Hemsworth), Bruce Banner/Hulk (Mark Ruffalo) e Natasha Romanoff/Viúva Negra (Scarlett Johansson). Só que, apesar do grande perigo que a Terra corre, não é tão simples assim conter o ego e os interesses de cada um deles para que possam agir em grupo.
+                </h3>
+                <ul class="hero__content__combos">
+                    <li class="hero__content__combos__combo">
+                        <img src="./dist/images/logos/avengers-png-logo-27967.png" alt="logoA">
+                        <button>Assista Agora</button>
+                    </li>
+                </ul>
+            </div>
+    </section>
+    <section class="shows">
+        <img style="width: 500px; margin-left: 550px;" src="./dist/images/logos/avengers-png-logo-27972.png" alt="">
+        <nav class="shows__tabs">
+            <button data-tab-button="herois" class="shows__tabs__button shows__tabs__button--is-active" >
+                Herois
+            </button>
+            <button data-tab-button="viloes" class="shows__tabs__button" >
+                Vilões
+            </button>
+        </nav>
+        <ul data-tab-id="herois" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/wp2900895-the-avengerswallpaper-loki-and-tesseract.png" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp8974041-captain-america-4k-computer-wallpapers.jpg" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp8753593-loki-4k-wallpapers.jpg" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp4313679-avengers-desktop-4k-wallpapers.jpg" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp12356533-hulk-full-screen-wallpapers.jpg" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp1703730-avengers-desktop-4k-wallpapers.jpg" alt="tesserect">
+            </li>
+        </ul>
+        <ul data-tab-id="viloes" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/wp8753593-loki-4k-wallpapers.jpg" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp8974041-captain-america-4k-computer-wallpapers.jpg" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp8753593-loki-4k-wallpapers.jpg" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp4313679-avengers-desktop-4k-wallpapers.jpg" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp12356533-hulk-full-screen-wallpapers.jpg" alt="tesserect">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/wp1703730-avengers-desktop-4k-wallpapers.jpg" alt="tesserect">
+            </li>
+        </ul>
+    </section>
+    <script src="./src/main.js"></script>
 </body>
 </html>

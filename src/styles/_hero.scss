@@ -1,0 +1,49 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 4vw;
+    background-image: url(../images/wp2613062-avengers-desktop-4k-wallpapers.jpg);
+    text-align: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+
+    &__content {
+        max-width: 640px;
+
+        &__branding {
+            max-width: 320px;
+            margin-bottom: 40px;
+        }
+
+        .title--small {
+            color: variaveis.$corTextoPrincipal;
+            font-family: Avenir, sans-serif;
+        }
+
+        &__combos {
+            &__combo {
+                width: 100%;
+
+                img {
+                    max-height: 250px;
+                    margin-top: 20px;
+                }
+
+                button {
+                    display: block;
+                    width: 100%;
+                    height: 60px;
+                    max-width: 50%;
+                    margin-left: 150px;
+                    font-size: 18px;
+                    color: variaveis.$corTextoPrincipal;
+                    background-color: variaveis.$corTextoSecundario;
+                    text-transform: uppercase;
+                    border-radius: 10px;
+                    margin-top: 2vw;
+                }
+            }
+        }
+    }
+}
