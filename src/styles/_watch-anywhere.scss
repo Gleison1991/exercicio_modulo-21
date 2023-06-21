@@ -1,0 +1,24 @@
+@use 'variaveis';
+
+.watch-anywhere {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    color: variaveis.$corTextoPrincipal;
+    font-family: Avenir, sans-serif;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+p {
+    color: variaveis.$corTextoPrincipal;
+    font-family: Avenir, sans-serif;
+}
